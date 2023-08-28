@@ -1,4 +1,5 @@
 _speed = 2;
+
 ///@method moovement()
 moovement = function(){
 	var _left, _right, _up, _down;
@@ -9,4 +10,6 @@ moovement = function(){
 
 	x += (_right - _left) * _speed;
 	y += (_down - _up) * _speed;
+	
+	image_angle = point_direction(x, y, mouse_x, mouse_y);
 }
