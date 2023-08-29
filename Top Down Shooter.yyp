@@ -9,7 +9,6 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_enemy_3","path":"sprites/spr_enemy_3/spr_enemy_3.yy",},"order":2,},
     {"id":{"name":"spr_shot","path":"sprites/spr_shot/spr_shot.yy",},"order":0,},
-    {"id":{"name":"obj_teste","path":"objects/obj_teste/obj_teste.yy",},"order":1,},
     {"id":{"name":"spr_enemy_1","path":"sprites/spr_enemy_1/spr_enemy_1.yy",},"order":0,},
     {"id":{"name":"spr_player_fire","path":"sprites/spr_player_fire/spr_player_fire.yy",},"order":1,},
     {"id":{"name":"spr_background_1","path":"sprites/spr_background_1/spr_background_1.yy",},"order":0,},
