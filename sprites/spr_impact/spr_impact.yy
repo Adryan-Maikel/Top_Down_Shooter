@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "sprs shot",
-    "path": "folders/Sprites/sprs shot.yy",
+    "name": "sprs bullet",
+    "path": "folders/Sprites/sprs bullet.yy",
   },
 }

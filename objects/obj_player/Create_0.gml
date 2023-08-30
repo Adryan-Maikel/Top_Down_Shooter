@@ -1,4 +1,6 @@
 _speed = 2;
+was_fired = false;
+cooldown_to_fire = game_get_speed(gamespeed_fps)
 
 ///@method moovement()
 moovement = function(){
@@ -22,4 +24,14 @@ moovement = function(){
 	y += _vel_v;
 	
 	image_angle = point_direction(x, y, mouse_x, mouse_y);
+}
+
+///@method shoot()
+shoot = function(){
+	if mouse_check_button(mb_left) and not was_fired{
+		was_fired = true;
+		alarm[0] = cooldown_to_fire;
+		var _shot = instance_create_layer(x, y, "Instances", obj_bullet);
+		_shot.direction = image_angle;
+	}
 }

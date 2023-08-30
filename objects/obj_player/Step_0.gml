@@ -1,1 +1,2 @@
 moovement()
+shoot()
