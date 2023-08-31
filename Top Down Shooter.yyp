@@ -50,10 +50,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sons","folderPath":"folders/Sons.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sprs background","folderPath":"folders/Sprites/sprs background.yy","order":3,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sprs bullet","folderPath":"folders/Sprites/sprs bullet.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sprs enemys","folderPath":"folders/Sprites/sprs enemys.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sprs game","folderPath":"folders/Sprites/sprs game.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sprs player","folderPath":"folders/Sprites/sprs player.yy","order":0,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sprs bullet","folderPath":"folders/Sprites/sprs bullet.yy","order":1,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

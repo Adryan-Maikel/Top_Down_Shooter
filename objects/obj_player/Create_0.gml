@@ -29,7 +29,9 @@ moovement = function(){
 ///@method shoot()
 shoot = function(){
 	if was_fired <= 0 {
-		if mouse_check_button(mb_left){
+		sprite_index = spr_player_running;
+		if mouse_check_button(mb_left) {
+			sprite_index = spr_player_fire;
 			var _shot = instance_create_layer(x, y, "Instances", obj_bullet);
 			_shot.direction = image_angle;
 			was_fired = cooldown_to_fire;
