@@ -30,11 +30,33 @@ set_direction = function() {
 		image_angle = direction;
 		time_set_direction = irandom_range(0, game_get_speed(gamespeed_fps) * 6);
 	}
-	if instance_exists(obj_player)
-	and point_distance(x, y, obj_player.x, obj_player.y) < 100 {
-		var _direction_player = point_direction(x, y, obj_player.x, obj_player.y);
-		direction = _direction_player;
-		image_angle = direction;
+	if instance_exists(obj_player) {
+		if point_distance(x, y, obj_player.x, obj_player.y) < 100 {
+			var _direction_player = point_direction(x, y, obj_player.x, obj_player.y);
+			direction = _direction_player;
+			image_angle = direction;
+		}
 	}
 }
 
+life = 3;
+///@method set_damage()
+set_damage = function() {
+	if place_meeting(x, y, obj_bullet){
+		var _bullet = instance_place(x, y, obj_bullet);
+		instance_destroy(_bullet);
+		life--;
+		speed = 0;
+		if life <= 0 destroying_me();
+	}
+}
+///@method destroying_me()
+destroying_me = function() {
+	instance_destroy();
+	repeat(irandom_range(10, 20)) {
+		var _slice = instance_create_layer(x, y, layer, obj_enemy_dead);
+		_slice.direction = irandom(359);
+		_slice.image_angle = _slice.direction;
+		_slice.speed = irandom_range(5, 10);
+	}
+}

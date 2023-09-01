@@ -19,6 +19,7 @@
     {"id":{"name":"spr_bullet_effect","path":"sprites/spr_bullet_effect/spr_bullet_effect.yy",},"order":1,},
     {"id":{"name":"spr_player_running","path":"sprites/spr_player_running/spr_player_running.yy",},"order":0,},
     {"id":{"name":"spr_background_3","path":"sprites/spr_background_3/spr_background_3.yy",},"order":2,},
+    {"id":{"name":"obj_enemy_dead","path":"objects/obj_enemy_dead/obj_enemy_dead.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
