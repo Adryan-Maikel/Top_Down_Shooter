@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Top Down Shooter",
   "resources": [
+    {"id":{"name":"obj_enemy_small","path":"objects/obj_enemy_small/obj_enemy_small.yy",},"order":2,},
     {"id":{"name":"spr_enemy_2","path":"sprites/spr_enemy_2/spr_enemy_2.yy",},"order":1,},
     {"id":{"name":"spr_impact","path":"sprites/spr_impact/spr_impact.yy",},"order":2,},
     {"id":{"name":"spr_background_2","path":"sprites/spr_background_2/spr_background_2.yy",},"order":1,},

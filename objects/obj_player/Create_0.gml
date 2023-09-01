@@ -1,5 +1,5 @@
 _speed = 2;
-was_fired = 0;
+was_shot = 0;
 cooldown_to_fire = game_get_speed(gamespeed_fps) * 0.2;
 
 ///@method moovement()
@@ -28,15 +28,16 @@ moovement = function(){
 
 ///@method shoot()
 shoot = function(){
-	if was_fired <= 0 {
+	if was_shot <= 0 {
 		sprite_index = spr_player_running;
 		if mouse_check_button(mb_left) {
 			sprite_index = spr_player_fire;
 			var _shot = instance_create_layer(x, y, "Instances", obj_bullet);
 			_shot.direction = image_angle;
-			was_fired = cooldown_to_fire;
+			was_shot = cooldown_to_fire;
+			
 		}
 	} else {
-		was_fired--;
+		was_shot--;
 	}
 }
