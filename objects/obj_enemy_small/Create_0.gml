@@ -22,7 +22,7 @@ dont_leave_the_room = function() {
 
 time_set_direction = irandom_range(0, game_get_speed(gamespeed_fps) * 6);
 ///@method set_direction()
-set_direction = function(){
+set_direction = function() {
 	time_set_direction--;
 	if time_set_direction <= 0 {
 		speed = random(2);
@@ -30,6 +30,11 @@ set_direction = function(){
 		image_angle = direction;
 		time_set_direction = irandom_range(0, game_get_speed(gamespeed_fps) * 6);
 	}
+	if instance_exists(obj_player)
+	and point_distance(x, y, obj_player.x, obj_player.y) < 100 {
+		var _direction_player = point_direction(x, y, obj_player.x, obj_player.y);
+		direction = _direction_player;
+		image_angle = direction;
+	}
 }
-	
-	
+
