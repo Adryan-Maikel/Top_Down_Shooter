@@ -46,6 +46,8 @@ set_damage = function() {
 		var _bullet = instance_place(x, y, obj_bullet);
 		instance_create_layer(_bullet.x, _bullet.y, layer, obj_bullet_impact);
 		instance_destroy(_bullet);
+		obj_screenshake.intensity = 3;
+		obj_screenshake.active = true;
 		life--;
 		speed = 0;
 		if life <= 0 destroying_me();
@@ -62,5 +64,8 @@ destroying_me = function() {
 		_slice.image_angle = _slice.direction;
 		_slice.speed = irandom_range(5, 10);
 	}
-	if instance_exists(obj_screenshake) obj_screenshake.active = true;
+	if instance_exists(obj_screenshake) {
+		obj_screenshake.intensity = 20;
+		obj_screenshake.active = true;
+	}
 }
