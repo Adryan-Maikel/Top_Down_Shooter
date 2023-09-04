@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_bullet_impact",
   "spriteId": {
-    "name": "spr_player_running",
-    "path": "sprites/spr_player_running/spr_player_running.yy",
+    "name": "spr_impact",
+    "path": "sprites/spr_impact/spr_impact.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,13 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "objs_player",
-    "path": "folders/Objetos/objs_player.yy",
+    "name": "objs_bullets",
+    "path": "folders/Objetos/objs_player/objs_bullets.yy",
   },
 }
