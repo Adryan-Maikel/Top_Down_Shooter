@@ -55,7 +55,8 @@ set_damage = function() {
 destroying_me = function() {
 	instance_destroy();
 	repeat(irandom_range(10, 20)) {
-		var _slice = instance_create_layer(x, y, layer, obj_enemy_dead);
+		instance_create_layer(x, y, layer, obj_enemy_dead);
+		var _slice = instance_create_layer(x, y, layer, obj_enemy_slice);
 		_slice.direction = irandom(359);
 		_slice.image_angle = _slice.direction;
 		_slice.speed = irandom_range(5, 10);

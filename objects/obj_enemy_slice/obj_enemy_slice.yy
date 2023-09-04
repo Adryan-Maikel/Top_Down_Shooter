@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy_dead",
+  "name": "obj_enemy_slice",
   "spriteId": {
-    "name": "spr_enemy_dead",
-    "path": "sprites/spr_enemy_dead/spr_enemy_dead.yy",
+    "name": "spr_enemy_slice",
+    "path": "sprites/spr_enemy_slice/spr_enemy_slice.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,7 +26,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
