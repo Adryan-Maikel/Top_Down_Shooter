@@ -44,6 +44,7 @@ life = 3;
 set_damage = function() {
 	if place_meeting(x, y, obj_bullet){
 		var _bullet = instance_place(x, y, obj_bullet);
+		instance_create_layer(_bullet.x, _bullet.y, layer, obj_bullet_impact);
 		instance_destroy(_bullet);
 		life--;
 		speed = 0;
@@ -61,4 +62,5 @@ destroying_me = function() {
 		_slice.image_angle = _slice.direction;
 		_slice.speed = irandom_range(5, 10);
 	}
+	if instance_exists(obj_screenshake) obj_screenshake.active = true;
 }
