@@ -50,6 +50,7 @@ set_damage = function() {
 		if life <= 0 destroying_me();
 	}
 }
+
 ///@method destroying_me()
 destroying_me = function() {
 	instance_destroy();
